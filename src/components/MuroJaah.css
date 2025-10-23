@@ -1,0 +1,172 @@
+/* 🌙 Background utama */
+body {
+  background: #f9f9f9; /* putih lembut */
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+/* 🕌 Container utama */
+.murojaah-container {
+  max-width: 720px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.9); /* putih transparan */
+  border: 2px solid #dcdcdc;
+  border-radius: 25px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  color: #333;
+  backdrop-filter: blur(6px);
+}
+
+/* 🌟 Judul */
+h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2a7a4b; /* hijau lembut */
+  text-shadow: none;
+}
+
+/* ✍️ Input section */
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.input-section input {
+  background-color: #fff;
+  color: #333;
+  border: 3px solid #a8d5ba;
+  border-radius: 12px;
+  padding: 12px 15px;
+  width: 240px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-section input:focus {
+  box-shadow: 0 0 6px #a8d5ba;
+  border-color: #7cc99f;
+}
+
+/* ✨ Tombol Tambah Target */
+.add-btn {
+  position: relative;
+  background: linear-gradient(135deg, #7cc99f, #5ebd82);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 60px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.add-btn::before {
+  content: "✨";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #8fdcb0, #6fc793);
+}
+
+/* 📋 Daftar target */
+.target-list {
+  margin-top: 30px;
+}
+
+/* Kartu target */
+.target-card {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-left: 6px solid #7cc99f;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.target-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Judul surat */
+.target-card h2 {
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #2a7a4b;
+}
+
+/* Ayat info */
+.target-card p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+/* Grup tombol kanan */
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Tombol status */
+.status-btn {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Warna status lembut */
+.status-btn.baru {
+  background-color: #7cc99f;
+}
+
+.status-btn.murojaah {
+  background-color: #6dbde0;
+}
+
+.status-btn.lancar {
+  background-color: #b6d86a;
+}
+
+/* Tombol hapus */
+.delete-btn {
+  background-color: #e57373;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #ef9a9a;
+  transform: scale(1.05);
+}
